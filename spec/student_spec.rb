@@ -109,7 +109,7 @@ describe Student do
       expect(Student.find_by_name("Jan")).to eq([{"id"=>1, "name"=>"Jan", "grade"=>10, 0=>1, 1=>"Jan", 2=>10}])
     end
   end
-  
+
   describe '.find_by' do
     it 'executes the SQL to find a row by the attribute passed into the method' do
       Student.new({name: "Susan", grade: 10}).save
